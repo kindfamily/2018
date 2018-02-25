@@ -1,87 +1,21 @@
-
 *{
     /* google web font */
     font-family: 'Raleway', sans-serif; 
     
 }
-/* fixed nav */
+
 body {margin:0;}
+
 .container{
     margin: 0px;
-    /* padding: p */
+    width: 100%;
+    padding: 0;
 }
-#textlogo{
-    /* padding-top: 0.2rem; */
+
+#logo{
     color: black;
     font-size: 1.7em;
     font-family: sans-serif;
     font-weight: bolder;
     padding-right: 4em;
-}
-/* .navbar {
-    padding-left: 5% !important;
-    padding-right: 5% !important;
-    margin-top: 0.5em !important;
-    margin-bottom: -30px !important;
-  
-    overflow: hidden-x;
-    
-    position: fixed;
-    top: 0;
-    width: 100%;
-    -webkit-font-smoothing: antialiased;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #161414;
-  text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  
-  
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-} */
-
-.main {
-  padding: 16px;
-  margin-top: 30px;
-  height: 1500px; /* Used in this example to enable scrolling */
-}
-
-/* fixed nav end */
-
-
-.logo{
-    width: 100px;
-    padding-top: 15px;
-    text-align: left;
-}
-
-.hr{
-    margin-top: 0;
-}
-
-
-
-div{
-    /* border: 1px solid black; */
-}
-
-
-
-
-
-/* 브라우저 사이즈가 991 이하가 되면 */
-@media only screen and (max-width: 991px) {
-    .supertitle{
-        text-align: left;
-    }
 }

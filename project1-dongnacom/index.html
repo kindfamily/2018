@@ -12,6 +12,55 @@
         
         <!-- custom CSS -->
         <link rel="stylesheet" href="css/style.css">
+        <style>
+        /* section */
+        body {
+            margin: 0;
+        }
+        .scene {
+            height: 100vh;
+            overflow: hidden;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 200;
+        }
+        .scene.one{
+            background-image: url(img/heic0910e.jpg);
+        }
+        .scene.two{
+            background-image: url(img/heic1501a.jpg);
+        }
+        .scene.three{
+            background-image: url(img/heic1608a.jpg);
+        }
+        .scene header{
+            color:white;
+            max-width: 80%;
+            position: relative;
+            left:50%;
+            top:50%;
+            transform:translateX(-50%) translateY(-50%);
+            font-size:1.5rem;
+            text-align: center;
+            border: 1px solid yellow;
+        }
+        .scene header h1{
+            font-size:2rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+        .scene header h1:after{
+            content:'';
+            border-bottom:1px solid white;
+            width:8rem;
+            display: block;
+            margin:0 auto;
+            margin-top:1rem;
+        }
+
+        /* section */
+        </style>
     </head>
     <body>
         <div class="container">
@@ -47,37 +96,40 @@
                     </ul>
                 </div>
             </nav>
-    
-            <div id="main" class="row">
-                <div class="col-md-12">
-                    main
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    1                    
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    2
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    3
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    4
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    5
-                </div>
-            </div>
+            <section id="main" class="scene one row">
+                <header class="col-md-12">
+                        <div class="src-components-page-landing-landingIntro----LandingIntro-module---content---2nwXm" data-reactid="120">
+                            <h1 data-reactid="121">The new
+                                <em data-reactid="123">pi-top</em>
+                            </h1>
+                            <h3 class="src-global-styles----typography-module---sectionDetail---2di8U" data-reactid="125">
+                                <b data-reactid="126">pi-top</b><!-- react-text: 127 --> is an award winning ecosystem designed to make experimenting, coding and building electronics, simple, affordable and fun.<!-- /react-text -->
+                            </h3>
+                            <div class="src-components-tool-ptLink----PtLink-module---root---1BC6v src-components-page-landing-landingIntro----LandingIntro-module---shop---yihKV" data-reactid="128">
+                                <a href="/products/pi-top" data-reactid="129">
+                                    <div class="src-components-tool-ptButtonStyle----PtButtonStyle-module---root---2UhZH src-components-tool-ptButtonStyle----PtButtonStyle-module---padded---1pqLz src-components-page-landing-landingIntro----LandingIntro-module---shopButton---19jaR" data-reactid="130">
+                            <div data-reactid="131">
+                            <span data-reactid="132">SHOP NOW</span>
+                            </div>
+                            </div>
+                        </a>
+                    </div>
+                    </div>
+                </header>
+            </section>
+            
+            <section class="scene two row">
+                <header class="col-md-12">
+                  <h1>2Lorem ipsum dolor sit amet.</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam suscipit sint ab beatae nihi
+                </header>
+            </section>
+            
+            <section class="scene three row">
+                <header class="col-md-12">
+                  <h1>3Lorem ipsum dolor sit amet.</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam suscipit sint ab beatae nihi
+                </header>
+            </section>
+
             <div id="footer-button" class="row">
                 <div class="col-md-12">
                     downArrow

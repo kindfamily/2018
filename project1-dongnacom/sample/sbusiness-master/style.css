@@ -64,6 +64,7 @@ footer{
 }
 
 .scene header{
+    padding: 0px !important;
     color:black;
     position: relative;
     left:50%;
@@ -116,4 +117,9 @@ button:hover {
         padding-top: 2em;   
         height: 80em; 
     }
+    .info{
+        width: 12em;
+        
+    }
+    
 }

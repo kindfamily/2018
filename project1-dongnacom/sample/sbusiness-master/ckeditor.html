@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <title>공동체를 위한 사업구상</title>
+        <meta charset="utf-8">
+        <!-- 모바일 화면에서 확대 되지 않도록 하는 부분 >> 움직임 어색해지고 브라우져별 문제 발생
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+         -->
+        <link rel="stylesheet" href="./fontello-733ae11e/css/fontello.css">
+        <link rel="stylesheet" href="./style.css">
+
+        <script src="https://cdn.ckeditor.com/ckeditor5/1.0.0-alpha.1/classic/ckeditor.js"></script>        
+        
+        <style>
+       
+
+        .ckeditor{
+            padding: 800px;
+            /* height:  */
+        }
+        </style>
+    </head>
+    <body>
+        <div id="grid">
+            <header class="header">
+                <div id="site-branding">
+                    <i class="icon-noun_1195043_cc"></i>
+                    <h1>SBUSSINESS</h1>
+                    <p><h2 id="site-description">신사업 정보 사이트</h2></p>
+                </div>
+                <div class="icon-lightbulb"></div>
+                <nav>
+                    <ol class="list">
+                        <li><a href="./index.html">home</a></li>
+                        <li>list<i class="icon-right-dir"></i></li>
+                        <li>about</li>
+                        <li>contact</li>
+                    </ol>
+                </nav>
+            </header>
+            <main>
+                <div style="height:1200px; padding:100px;">
+                    <textarea  name="content" id="editor"></textarea>
+                    <script>
+                        ClassicEditor
+                            .create( document.querySelector( '#editor' ) )
+                            .catch( error => {
+                                console.error( error );
+                            } );
+                    </script>
+                </div>
+                
+            <!-- </main>
+            <aside></aside>
+            <footer></footer> -->
+        </div>
+            
+    </body>
+</html>

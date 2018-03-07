@@ -14,92 +14,6 @@
         
         <!-- custom CSS -->
         <link rel="stylesheet" href="css/style.css">
-        <style>
-        /* section */
-        body {
-            margin: 0;
-        }
-        .scene {
-            height: 100vh;
-            overflow: hidden;
-            background-attachment: fixed;
-            background-size: cover;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-weight: 200;
-        }
-        .scene.one{
-            background-image: url(img/heic0910e.jpg);
-        }
-        .scene.two{
-            background-image: url(img/heic1501a.jpg);
-        }
-        .scene.three{
-            background-image: url(img/heic1608a.jpg);
-        }
-        .scene header{
-            color:black;
-            /* max-width: 40%; */
-            position: relative;
-            left:50%;
-            top:50%;
-            transform:translateX(-50%) translateY(-50%);
-            font-size:1.5rem;
-            text-align: center;
-            /* border: 1px solid yellow; */
-        }
-        
-        .info{
-            border-top-left-radius: 2vh;
-            border-top-right-radius: 2vh;
-            
-            margin: 1em;
-            width: 20em;
-            height: 20em;
-            /* border: 6px solid powderblue; */
-            text-align: left;
-            display:inline-block;
-
-        }
-
-
-        .scene header h1{
-            /* max-width: 20%; */
-            font-size:2rem;
-            margin-bottom: 1rem;
-            font-weight: 300;
-        }
-
-        .scene header img{
-            width: 18em;
-            height: 16em;   
-            /* margin-left: 1rem; */
-        }
-
-
-        .scene header h1:after{
-            content:'';
-            border-bottom:1px solid white;
-            width:8rem;
-            display: block;
-            margin:0 auto;
-            margin-top:1rem;
-        }
-
-        .btn-secondary{
-            border-radius: 0;
-            background-color: powderblue;
-            height: 2.5em;
-            width: 100%;
-            display: inline-block;
-        }
-        button:hover {
-            
-            background-color: yellow;
-            /* background-color-opacity: 0; */
-        }
-
-        /* section */
-        </style>
     </head>
     <body>
         <div class="container">
@@ -135,7 +49,7 @@
                     </ul>
                 </div>
             </nav>
-            <section id="main" class="scene one row">
+            <section id="main" class="scene one row" style="margin: 0px;">
                 <header class="col-md-12">
                     <div class="info">
                         <img src="../project1-dongnacom/img/droid-front-2.png" alt="">

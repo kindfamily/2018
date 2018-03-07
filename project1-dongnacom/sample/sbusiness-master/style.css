@@ -1,63 +1,42 @@
-
-@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
-@import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
-@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
-
-
-/* reset */
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+/* grid  */
+#grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "aside"
+    "footer";
 }
 
-/* reset */
+main{
+    grid-area: main;
+}
 
+section{
+    height: 80em;
+    padding-top: 4em;
+    margin: 0px !important;
+}
+
+section header div img{
+    height: 10em;
+    width: 10em;
+}
+
+aside{
+    grid-area: aside;
+    background-color: #cccccc;
+    height: 170px;
+   
+}
+
+footer{
+    grid-area: footer;
+    height: 700px;
+    background-color: #f2f2f2;
+    
+}
 
 /* 섹션 배경 */
 .scene {
@@ -70,26 +49,28 @@ table {
     font-weight: 200;
     border: 1px solid
 }
+
 .scene.one{
     background-image: url(img/heic0910e.jpg);
     
 }
+
 .scene.two{
     background-image: url(img/heic1501a.jpg);
 }
+
 .scene.three{
     background-image: url(img/heic1608a.jpg);
 }
+
 .scene header{
     color:black;
-    /* max-width: 40%; */
     position: relative;
     left:50%;
     top:50%;
     transform:translateX(-50%) translateY(-50%);
     font-size:1.5rem;
     text-align: center;
-    /* border: 1px solid yellow; */
 }
 
 
@@ -100,29 +81,10 @@ table {
     margin: 1em;
     width: 20em;
     height: 10em;
-    /* border: 6px solid powderblue; */
     text-align: left;
     display:inline-block;
     border: 1px solid black;
 
-}
-
-
-.scene header h1{
-    /* max-width: 20%; */
-    font-size:2rem;
-    margin-bottom: 1rem;
-    font-weight: 300;
-}
-
-
-.scene header h1:after{
-    content:'';
-    border-bottom:1px solid white;
-    width:8rem;
-    display: block;
-    margin:0 auto;
-    margin-top:1rem;
 }
 
 .btn-secondary{
@@ -138,230 +100,18 @@ button:hover {
     /* background-color-opacity: 0; */
 }
 
-
-
-/* heaer  */
-
-
-#grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "header"
-    "main"
-    "aside"
-    "footer";
-}
-
-
-/* main  */
-main{
-    grid-area: main;
-}
-
-section{
-    height: 80em;
-    padding-top: 4em;
-}
-
-section header div img{
-    height: 10em;
-    width: 10em;
-}
-.site-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-article{
-    text-align: center;
-    color: black;
-    /* border: 5px solid #CCCCCC; */
-    height: 700px;
-    width: auto;
-    background-color: #ffffff;
-}
-
-article > figure{
-    /* border: 1px solid rgb(196, 190, 190); */
-}
-
-.ellipsis-multi{
-    text-align: left;
-    padding: 10px;
-    height:700px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 6; /* 라인수 */
-    -webkit-box-orient: vertical;
-    word-break: break-all;
-    word-wrap:break-word; 
-    line-height: 1.2em;
-    height: 6.6em; /* line-height 가 1.2em 이고 3라인을 자르기 때문에 height는 1.2em * 3 = 3.6em */
-}
-
-article > header{
-    padding: 5px;
-}
-
-.nextposting{
-    background: gold;
-    display: block;
-    border-bottom-right-radius: 120px;
-    border-bottom-left-radius: 20px;
-}
-
-article > figure{
-    display: inline-block;                
-    margin: 0;
-}
-article > figure > img{
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.icon-plus-squared{
-    color: gray;
-    font-size: 5rem;
-    
-} 
-
-/* aside footer */
-aside{
-    grid-area: aside;
-    background-color: #cccccc;
-    height: 170px;
-   
-}
-
-footer{
-    grid-area: footer;
-    height: 700px;
-    background-color: #f2f2f2;
-    
-}
-
 @media(max-width:1200px){
-    /* #grid {
-    display:grid;
-    grid-template-columns: 330px 1fr 1fr 1fr;
-    } */
-
-    article{
-        width: auto;
-    }
-    .site-main{
-        grid-template-columns: 1fr 1fr;
-        }
-    }
-
     .scene.one{
         padding-top: 2em;   
         height: 80em; 
     }
 
 @media(max-width:990px){
-    #grid{
-        grid-template-columns: auto;
-        grid-template-areas:
-        "header"
-        "main"
-        "aside"
-        "footer";
-    }
-
-    #site-branding{
-        font-size: 2.1rem;
-        position: absolute;
-        height: auto;
-        width: 100%;
-        padding: 20px 0px 0px 0px;
-    }
-
-    .icon-noun_1195043_cc{
-        font-size: 17rem;
-        padding: 10px;
-    }
-
-    .icon-lightbulb{
-        display: none;
-    }
-
-
-    nav{
-        position: absolute;
-        width: 100%;
-        height: auto;
-    }
-    
-    .list{
-        height: 100px;   
-        padding: 0px;
-        margin: 0px;
-    }
-
-
-    .list > li{
-        display: inline-block;
-        list-style: none;
-        background-color: #2E3135;
-        font-size: 2rem;
-        padding: 5x;
-        border-radius: 8px;
-        margin: 5px;
-    }
-
-    .site-main{
-        grid-template-columns: auto;                    
-    }
-
-    article{
-    text-align: center;
-    color: black;
-    height: 1000px;
-    /* margin: -45px; */
-    }
-
-    article > figure > div{
-        /* position: absolute; */
-        /* margin: 0; */
-        border:1px solid gray;
-        background-color: gold;
-    }
-    article > header{
-        /* border:1px solid gray; */
-    }
-    article > div{
-        /* border:1px solid gray; */
-    }
-
-    .icon-plus-squared{
-        font-size: 8rem;
-        left: 11%;
-        margin: 0px;
-    }
     .scene.one{
         padding-top: 2em;   
         height: 80em; 
     }
 @media(max-width:558px){
-    .list{
-        padding-top: 120px;
-    }
-    .list > li{
-        font-size: 1rem;
-    }
-    .icon-noun_1195043_cc{
-        font-size: 13rem;
-        padding: 0;
-        margin: 0;
-    }
-
-    #site-branding{
-        font-size: 1.5rem;
-    }
-
     .scene.one{
         padding-top: 2em;   
         height: 80em; 

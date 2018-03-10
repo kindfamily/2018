@@ -1,3 +1,9 @@
+*{
+    /* google web font */
+    font-family: 'Raleway', sans-serif; 
+    
+}
+
 /* grid  */
 #grid {
     display: grid;
@@ -20,6 +26,8 @@ section{
 }
 
 section header div img{
+    margin: 0 4.5em;
+    
     height: 10em;
     width: 10em;
 }
@@ -39,8 +47,12 @@ footer{
 }
 
 /* 섹션 배경 */
+.navbar-brand{
+    font-weight: bold;
+}
+
 .scene {
-    height: 100vh;
+    height: 50em;
     /* width: 30em; */
     overflow: hidden;
     background-attachment: fixed;
@@ -51,16 +63,15 @@ footer{
 }
 
 .scene.one{
-    background-image: url(img/heic0910e.jpg);
-    
+    background-image: url(../img/heic0910e.jpg);    
 }
 
 .scene.two{
-    background-image: url(img/heic1501a.jpg);
+    background-image: url(../img/heic1501a.jpg);
 }
 
 .scene.three{
-    background-image: url(img/heic1608a.jpg);
+    background-image: url(../img/heic1608a.jpg);
 }
 
 .scene header{
@@ -78,48 +89,165 @@ footer{
 .info{
     border-top-left-radius: 2vh;
     border-top-right-radius: 2vh;
+
+    
     
     margin: 1em;
     width: 20em;
     height: 10em;
     text-align: left;
     display:inline-block;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 
-.btn-secondary{
-    border-radius: 0;
-    background-color: powderblue;
-    height: 2.5em;
+/* 아이템 결제연결 버튼*/
+.btn {
     width: 100%;
-    display: inline-block;
+    height: 2em;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 0.3em;
+    font-size: 0.7em;
+    cursor: pointer;
+  }
+
+/* Green */
+.success {
+    border-color: #4CAF50;
+    color: green;
 }
-button:hover {
-    
-    background-color: yellow;
-    /* background-color-opacity: 0; */
+
+.success:hover {
+    background-color: #4CAF50;
+    color: white;
 }
 
 @media(max-width:1200px){
     .scene.one{
         padding-top: 2em;   
-        height: 80em; 
+        height: 50em; 
     }
+    
+    /* 아이템 결제연결 버튼*/
+    .btn {
+        width: 100%;
+        height: 3em;
+        border: 2px solid rgb(134, 67, 67);
+        background-color: white;
+        color: rgb(187, 70, 70);
+        padding: 14px 28px;
+        font-size: 0.7em;
+        cursor: pointer;
+    }
+
+    /* Green */
+    .success {
+        border-color: #4CAF50;
+        color: green;
+    }
+
+    .success:hover {
+        background-color: #4CAF50;
+        color: white;
+    }
+}
+@media(max-width:1066px){
+    .scene.one{
+        padding-top: 1em;   
+        height: 90em; 
+    }
+    
+    /* 아이템 결제연결 버튼*/
+    .btn {
+        width: 100%;
+        height: 3em;
+        border: 2px solid rgb(134, 67, 67);
+        background-color: white;
+        color: black;
+        padding: 14px 28px;
+        font-size: 0.7em;
+        cursor: pointer;
+    }
+
+    /* Green */
+    .success {
+        border-color: #4CAF50;
+        color: green;
+    }
+
+    .success:hover {
+        background-color: #4CAF50;
+        color: white;
+    }
+}
 
 @media(max-width:990px){
     .scene.one{
         padding-top: 2em;   
-        height: 80em; 
+        height: 85em; 
     }
+    /* 아이템 결제연결 버튼*/
+    .btn {
+        width: 100%;
+        height: 3em;
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+        padding: 14px 28px;
+        font-size: 0.7em;
+        cursor: pointer;
+    }
+
+    /* Green */
+    .success {
+        border-color: #4CAF50;
+        color: green;
+    }
+
+    .success:hover {
+        background-color: #4CAF50;
+        color: white;
+    }
+}
 @media(max-width:558px){
     .scene.one{
         padding-top: 2em;   
-        height: 80em; 
+        height: 85em; 
     }
     .info{
-        width: 12em;
+        width: 12em;   
+    }
+
+    section header div img{
+        margin: 0 0.9em;
         
+        height: 10em;
+        width: 10em;
+    }
+    
+    /* 아이템 결제연결 버튼*/
+    .btn {
+        width: 100%;
+        height: 3em;
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+        padding: 14px 28px;
+        font-size: 0.7em;
+        cursor: pointer;
+    }
+
+    /* Green */
+    .success {
+        border-color: #4CAF50;
+        color: green;
+    }
+
+    .success:hover {
+        background-color: #4CAF50;
+        color: white;
     }
     
 }

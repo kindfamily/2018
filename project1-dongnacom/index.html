@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html lang="ko">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+<head>
+    <title>교육협동조합</title>
+    <meta charset="utf-8">
+    <!-- 모바일 화면에서 확대 되지 않도록 하는 부분 >> 움직임 어색해지고 브라우져별 문제 발생
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+         -->
+    
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"> -->
-        <title>dongnecom</title>
-        
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        
-        <!-- custom CSS -->
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div class="container">
+<link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div id="grid">
+        <header class="header">
             <nav class="navbar navbar-default navbar-fixed-top" style="box-shadow: 2px 2px 5px gray; width: 100%;">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -49,23 +57,25 @@
                     </ul>
                 </div>
             </nav>
-            <section id="main" class="scene one row" style="margin: 0px;">
+        </header>
+        <main>
+            <section id="main" class="scene one row">
                 <header class="col-md-12">
                     <div class="info">
-                        <img src="../project1-dongnacom/img/droid-front-2.png" alt="">
+                        <img src="img/droid-front-2.png" alt="">
                         <button class="btn btn-secondary">Shop now</button>
                     </div>
                     <div class="info">
-                        <img src="../project1-dongnacom/img/solidlab.png" alt="">
+                        <img src="img/solidlab.png" alt="">
                         <button class="btn btn-secondary">Shop now</button>
                     </div>
                     <div class="info">
-                        <img src="../project1-dongnacom/img/sprk+.png" alt="">
-                        <button class="btn btn-secondary">Shop now</button>
+                            <img src="img/sprk+.png" alt="">
+                            <button class="btn btn-secondary">Shop now</button>
                    </div>
                     <div class="info">
-                        <img src="../project1-dongnacom/img/main.83684950.png" alt="">
-                        <button class="btn btn-secondary">Shop now</button>
+                            <img src="img/main.83684950.png" alt="">
+                            <button class="btn btn-secondary">Shop now</button>
                     </div>
                </header>
             </section>
@@ -80,23 +90,33 @@
                   <h1>3Lorem ipsum dolor sit amet.</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam suscipit sint ab beatae nihi
                 </header>
             </section>
-
-            <div id="footer-button" class="row">
-                <div class="col-md-12">
-                    downArrow
-                </div>
+        </main>
+        <aside>
+            <!-- 라이브리 시티 설치 코드 -->
+            <div id="lv-container" data-id="city" data-uid="MTAyMC8zMTgyNC84Mzg4">
+                <script type="text/javascript">
+                    (function (d, s) {
+                        var j, e = d.getElementsByTagName(s)[0];
+                        if (typeof LivereTower === 'function') { return; }
+                        j = d.createElement(s);
+                        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                        j.async = true;
+                        e.parentNode.insertBefore(j, e);
+                    })(document, 'script');
+                </script>
+                <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    footer
-                </div>
-            </div>
-        </div>
+            <!-- 시티 설치 코드 끝 -->
+        </aside>
+        <footer></footer>
+    </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    </body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+
 </html>

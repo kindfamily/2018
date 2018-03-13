@@ -1,0 +1,63 @@
+<head>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+
+<style>
+.container{
+    height: 1000px;
+    padding: 300px;
+    position: absolute;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    /* float: left; */
+    transition: 2s ease-in-out;
+}
+
+.redbox{
+    background: red;
+    z-index: 3;
+}
+
+.greenbox{
+    z-index: 1;
+    background: green;
+}
+
+.redbox.animate{
+    margin-top: 10px;
+    -webkit-transform: translate(0, 300px);
+}
+
+.greenbox.animate{
+    -webkit-transform: translate(0, 200px);
+}
+
+</style>
+<div class="container">
+    <div class="box redbox"></div>
+    <div class="box greenbox"></div>
+</div>
+
+
+
+
+
+<script>
+    $(window).scroll(function(){
+        console.log($(this).scrollTop());
+
+        if($(this).scrollTop()>=150){
+            $('.redbox').addClass('animate');
+            $('.greenbox').addClass('animate');
+        }else{
+            $('.redbox').removeClass('animate');
+            $('.greenbox').removeClass('animate');   
+        }
+    });
+</script>

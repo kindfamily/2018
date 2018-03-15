@@ -20,6 +20,7 @@ main{
 }
 
 section{
+    z-index: 1;
     height: 80em;
     padding-top: 4em;
     margin: 0px !important;
@@ -75,31 +76,49 @@ footer{
 }
 
 .scene header{
+    padding-top: 0px;
     padding: 0px !important;
     color:black;
-    position: relative;
-    left:50%;
-    top:50%;
-    transform:translateX(-50%) translateY(-50%);
+    position: absolute;
     font-size:1.5rem;
     text-align: center;
 }
-
-
-.info{
-    border-top-left-radius: 2vh;
-    border-top-right-radius: 2vh;
-
-    
-    
-    margin: 1em;
-    width: 20em;
-    height: 10em;
-    text-align: left;
-    display:inline-block;
-    /* border: 1px solid black; */
-
+/* 메인 아이템 박스 */
+.box{
+    /* z-index: 2; */
+    position: absolute;
+    width: 100%;
+    transition: 0.1s linear;
+    padding-left: 8em;
+    padding-top: 3em;
 }
+
+.redbox{
+    /* z-index: 2; */
+    margin-top: 8em;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.greenbox{
+    /* z-index: 3; */
+    margin-top: 8em;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.title{
+    display: inline; 
+    float: left; 
+    /* border:1px solid black;  */
+    margin-left: 5em; 
+    font-size: 3rem;
+    text-align: left;
+}
+
+section header div img{
+ width: 20em;
+ height: auto;
+}
+
 
 /* 아이템 결제연결 버튼*/
 .btn {
@@ -154,6 +173,10 @@ footer{
     }
 }
 @media(max-width:1066px){
+
+    .box{
+        width: 50%;
+    }
     .scene.one{
         padding-top: 1em;   
         height: 90em; 

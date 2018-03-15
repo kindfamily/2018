@@ -19,7 +19,54 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 
+<style>
 
+.box{
+    /* z-index: 2; */
+    position: absolute;
+    width: 100%;
+    transition: 0.1s linear;
+    padding-left: 8em;
+    padding-top: 3em;
+}
+
+.redbox{
+    /* z-index: 2; */
+    margin-top: 8em;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.greenbox{
+    /* z-index: 3; */
+    margin-top: 8em;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.title{
+    display: inline; 
+    float: left; 
+    /* border:1px solid black;  */
+    margin-left: 5em; 
+    font-size: 3rem;
+    text-align: left;
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 </head>
 
 <body>
@@ -61,7 +108,12 @@
         <main>
             <section id="main" class="scene one row">
                 <header class="col-md-12">
-                    <div class="info">
+                        <div class="title" ><h4>The pi-top</h4><p>the best tool for coding cheap and powerful</p> 
+                            <button class="btn success">Shop now</button>
+                        </div>
+                        <div class="box redbox"><img src="./img/main.83684950.png" alt=""></div>
+                        <div class="box greenbox"><img src="./img/components.ea89c574.png" alt=""></div>
+                    <!-- <div class="info">
                         <img src="img/droid-front-2.png" alt="">
                         <button class="btn success">Shop now</button>
                     </div>
@@ -76,7 +128,7 @@
                     <div class="info">
                             <img src="img/main.83684950.png" alt="">
                             <button class="btn success">Shop now</button>
-                    </div>
+                    </div> -->
                </header>
             </section>
             <section class="scene two row">
@@ -120,6 +172,20 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+
+<script>
+        $(window).scroll(function(){
+            console.log($(this).scrollTop());
+            // transform: translate3d(0px, 330px, 0px);
+            var redBoxSpeed = $(this).scrollTop()/5;
+            var greenBoxSpeed = $(this).scrollTop()/3;
+            
+    
+    
+            $(".redbox").css("-webkit-transform", "translate3d(0px,"+redBoxSpeed+"px, 0px)");
+            $(".greenbox").css("-webkit-transform", "translate3d(0px,"+greenBoxSpeed+"px, 0px)");
+        });
+    </script>
 </body>
 
 </html>

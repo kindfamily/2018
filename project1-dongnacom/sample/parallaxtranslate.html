@@ -6,58 +6,63 @@
 </head>
 
 <style>
-.container{
-    height: 1000px;
-    padding: 300px;
-    position: absolute;
+.container1{
+    height: 50%;
+    position: relative;
 }
 
 .box{
-    width: 200px;
-    height: 200px;
-    /* float: left; */
-    transition: 2s ease-in-out;
+    width: 100%;
+    transition: 0.1s linear;
 }
 
 .redbox{
-    background: red;
-    z-index: 3;
+    z-index: 8;
+    margin-top: 10px;
+    -webkit-transform: translate3d(0px, 300px, 0px);
 }
 
 .greenbox{
     z-index: 1;
-    background: green;
+    -webkit-transform: translate3d(0px, 10px, 0px);
 }
 
-.redbox.animate{
-    margin-top: 10px;
-    -webkit-transform: translate(0, 300px);
-}
 
-.greenbox.animate{
-    -webkit-transform: translate(0, 200px);
-}
 
+img{
+    /* width: 100%; */
+}
 </style>
-<div class="container">
-    <div class="box redbox"></div>
-    <div class="box greenbox"></div>
+<div class="container1">
+    <div class="box redbox"><img src="./img/main.83684950.png" alt=""></div>
+    <div class="box greenbox"><img src="./img/components.ea89c574.png" alt=""></div>
 </div>
-
-
+<div class="container1">
+    <div class="box"></div>
+    <div class="box"></div>
+</div><div class="container1">
+    <div class="box"></div>
+    <div class="box"></div>
+</div><div class="container1">
+    <div class="box"></div>
+    <div class="box"></div>
+</div><div class="container1">
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
 
 
 
 <script>
     $(window).scroll(function(){
         console.log($(this).scrollTop());
+        // transform: translate3d(0px, 330px, 0px);
+        var redBoxSpeed = $(this).scrollTop()/3;
+        var greenBoxSpeed = $(this).scrollTop()/5;
+        
 
-        if($(this).scrollTop()>=150){
-            $('.redbox').addClass('animate');
-            $('.greenbox').addClass('animate');
-        }else{
-            $('.redbox').removeClass('animate');
-            $('.greenbox').removeClass('animate');   
-        }
+
+        $(".redbox").css("-webkit-transform", "translate3d(0px,"+redBoxSpeed+"px, 0px)");
+        $(".greenbox").css("-webkit-transform", "translate3d(0px,"+greenBoxSpeed+"px, 0px)");
     });
 </script>

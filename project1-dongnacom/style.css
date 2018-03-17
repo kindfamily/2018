@@ -1,4 +1,8 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+*{
+    /* google web font */
+    font-family: 'Nanum Gothic Coding', monospace;
+    
+}
 
 /* grid  */
 #grid {
@@ -7,6 +11,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     grid-template-areas:
     "header"
     "main"
+    "aside"
+    "footer";
 }
 
 main{
@@ -29,6 +35,19 @@ section header div img{
     width: 10em;
 }
 
+aside{
+    grid-area: aside;
+    background-color: #cccccc;
+    height: 170px;
+   
+}
+
+footer{
+    grid-area: footer;
+    height: 700px;
+    background-color: #f2f2f2;
+    
+}
 
 /* 섹션 배경 */
 .navbar-brand{
@@ -294,7 +313,7 @@ section header div img{
 @media(max-width:480px){
     .scene.one{
         padding-top: 2em;   
-        height: 60em; 
+        height: 80em; 
     }
     .info{
         width: 12em;   

@@ -1,0 +1,31 @@
+.box{
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    transition: 0.1s linear;
+    padding-left: 8em;
+    padding-top: 3em;
+}
+.box img{
+    width: 30em;
+}
+
+.redbox{
+    float: right;
+    right: 100px;
+    width: 800px;
+    margin-top: 8em;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.greenbox{
+    float: right;    
+    right: 100px;    
+    width: 800px;
+    margin-top: 8em;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+span, div{
+    border: 1px solid bisque;
+}

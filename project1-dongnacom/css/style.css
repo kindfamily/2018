@@ -329,11 +329,17 @@ section header div img{
     }
     
     .greenbox{
+<<<<<<< HEAD
         right: 4em;        
     }  
 
     
 
+=======
+        right: 3em;        
+    }  
+
+>>>>>>> e7ee986e09dbe64fae2bd36d326248122e05695f
     .title h1{
         font-size: 1.8em;
         padding-left: 1em;

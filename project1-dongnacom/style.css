@@ -282,9 +282,7 @@ section header div img{
         height: 10em;
         width: 10em;
     }
-    .title{
-        /* margin-left: 12em !important; */
-    }
+    
     
     /* 아이템 결제연결 버튼*/
     .btn {
@@ -315,6 +313,7 @@ section header div img{
         padding-top: 2em;   
         height: 80em; 
     }
+
     .info{
         width: 12em;   
     }
@@ -325,12 +324,11 @@ section header div img{
         padding-left: 30px;
         height: 10em;
         width: 10em;
-    }
-    .title h1{
-        font-size: 2em;
-        padding: 0.5em;
-        font-family: 'Nanum Gothic Coding', monospace;    
         
+    }
+
+    header .title h1{
+        font-size: 200px !important;
     }
     
     /* 아이템 결제연결 버튼*/

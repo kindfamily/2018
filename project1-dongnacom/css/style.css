@@ -92,6 +92,7 @@ section header div img{
     float: left;
     padding: 1em 0; 
     margin-left: 5em; 
+    margin-right: 10px;
     font-size: 3rem;
     text-align: left;
 }
@@ -223,6 +224,15 @@ section header div img{
         text-align: left;
         right: 0px;
     }
+
+
+    .redbox{
+        right: 11.5em;
+    }
+    
+    .greenbox{
+        right: 11.5em;        
+    }    
     .title h1{
         /* display: block; */
         padding: 0px;
@@ -264,9 +274,15 @@ section header div img{
         width: 10em;
     }
     .title{
-        /* margin-left: 12em !important; */
+        font-size: 1.5em !important;
+    }
+    .redbox{
+        right: 7.5em;
     }
     
+    .greenbox{
+        right: 3em;        
+    }  
     /* 아이템 결제연결 버튼*/
     .btn {
         width: 100%;
@@ -294,7 +310,7 @@ section header div img{
 @media(max-width:480px){
     .scene.one{
         padding-top: 2em;   
-        height: 60em; 
+        height: 48em; 
     }
     .info{
         width: 12em;   
@@ -307,11 +323,20 @@ section header div img{
         height: 10em;
         width: 10em;
     }
+
+    .redbox{
+        right: 6.3em;
+    }
+    
+    .greenbox{
+        right: 4em;        
+    }  
+
+    
+
     .title h1{
-        font-size: 2em;
-        padding: 0.5em;
-        font-family: 'Nanum Gothic Coding', monospace;    
-        
+        font-size: 1.8em;
+        padding-left: 1em;
     }
     
     /* 아이템 결제연결 버튼*/
@@ -322,6 +347,7 @@ section header div img{
         background-color: white;
         color: rgb(187, 70, 70);
         padding: 0px 28px;
+        margin-right: 20px;
         font-size: 0.4em;
         cursor: pointer;
     }
